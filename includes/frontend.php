@@ -55,3 +55,4 @@ function _b($atts=[]){
     return ob_get_clean();
 }
 add_shortcode('youtube_live','_b');
+?>

@@ -141,3 +141,4 @@ function _6(){
 
 function _c(){add_menu_page('YouTube Live Broadcasts','YouTube Live Broadcasts','manage_options','_5','_d',
 'dashicons-video-alt3',6);}add_action('admin_menu','_c');function _d(){_6();}
+?>

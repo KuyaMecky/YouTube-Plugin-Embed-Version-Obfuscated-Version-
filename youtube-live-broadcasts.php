@@ -39,3 +39,4 @@ type="text" value="<?php echo esc_attr($d);?>">
 $c['title']=(!empty($e['title']))?strip_tags($e['title']):'';
 $c['channel']=(!empty($e['channel']))?strip_tags($e['channel']):'';
 return $c;}}
+?>
