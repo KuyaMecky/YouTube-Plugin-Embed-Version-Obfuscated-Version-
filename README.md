@@ -43,4 +43,15 @@ For any issues or questions, please contact Michael Tallada at [tallada88@gmail.
 
 ## License
 This plugin is licensed under the MIT License.
+
+## Version 1.0 Release
+### Tag
+v1.0.0
+
+### Title
+Initial Release of YouTube Plugin Embed Version (Obfuscated Version)
+
+### Description
+This is the initial release of the YouTube Plugin Embed Version (Obfuscated Version). It includes all the basic features needed to embed YouTube videos into your WordPress site easily. Enjoy customizable video player options and a responsive design for both mobile and desktop.
+
 # YouTube-Plugin-Embed-Version-Obfuscated-Version-
