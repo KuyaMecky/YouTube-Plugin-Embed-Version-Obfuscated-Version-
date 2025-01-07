@@ -7,13 +7,13 @@
 ## Installation Steps
 
 1. **Download the Plugin**
-    - Download the `YouTube Live Broadcasts original .php` plugin file from the repository or source.
+    - Download the `YouTube Live Broadcasts` plugin file from the repository or source.
 
 2. **Upload the Plugin to WordPress**
     - Go to your WordPress dashboard.
     - Navigate to `Plugins` > `Add New`.
     - Click on the `Upload Plugin` button.
-    - Choose the downloaded `YouTube Live Broadcasts original .php` file.
+    - Choose the downloaded `YouTube Live Broadcasts` file.
     - Click `Install Now`.
 
 3. **Activate the Plugin**
@@ -25,7 +25,7 @@
     - Save the changes.
 
 5. **Embed YouTube Live Broadcasts**
-    - Use the provided shortcode `[youtube_live']` to embed live broadcasts in your posts or pages.
+    - Use the provided shortcode `[youtube_live]` to embed live broadcasts in your posts or pages.
 
 ## Admin Panel Configuration
 
