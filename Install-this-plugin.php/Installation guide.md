@@ -27,6 +27,15 @@
 5. **Embed YouTube Live Broadcasts**
     - Use the provided shortcode `[youtube_live']` to embed live broadcasts in your posts or pages.
 
+## Admin Panel Configuration
+
+1. **Change Channel ID and Title Filter**
+    - Navigate to `Settings` > `YouTube Live Broadcasts`.
+    - In the settings page, you will find options to change the Channel ID and set a Title Filter.
+    - Enter the desired Channel ID.
+    - Set the Title Filter to include or exclude specific keywords.
+    - Save the changes.
+
 ## Troubleshooting
 - Ensure that your server meets the PHP version requirement.
 - Verify that the YouTube API key is correct and has the necessary permissions.

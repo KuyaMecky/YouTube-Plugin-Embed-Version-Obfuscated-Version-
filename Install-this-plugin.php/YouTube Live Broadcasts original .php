@@ -354,33 +354,51 @@ function yt_live_broadcasts_admin_menu() {
 add_action('admin_menu', 'yt_live_broadcasts_admin_menu');
 
 function yt_live_broadcasts_dashboard_page() {
-?>
-    <div class="wrap">
-        <h1>YouTube Live Broadcasts Dashboard</h1>
-        <div>
-            <h2>Settings</h2>
-            <form method="post" action="options.php">
-                <?php settings_fields('yt_live_broadcasts_options_group'); ?>
-                <table>
-                    <tr valign="top">
-                        <th scope="row"><label for="yt_live_broadcasts_channel_id">Channel ID</label></th>
-                        <td><input type="text" id="yt_live_broadcasts_channel_id" name="yt_live_broadcasts_channel_id" value="<?php echo esc_attr(get_option('yt_live_broadcasts_channel_id')); ?>" /></td>
-                    </tr>
-                    <tr valign="top">
-                        <th scope="row"><label for="yt_live_broadcasts_title_filter">Title Filter</label></th>
-                        <td><input type="text" id="yt_live_broadcasts_title_filter" name="yt_live_broadcasts_title_filter" value="<?php echo esc_attr(get_option('yt_live_broadcasts_title_filter')); ?>" /></td>
-                    </tr>
-                </table>
-                <?php submit_button(); ?>
-            </form>
+    ?>
+        <div class="wrap">
+            <h1>YouTube Live Broadcasts Dashboard</h1>
+            <div>
+                <h2>Settings</h2>
+                <form method="post" action="options.php">
+                    <?php settings_fields('yt_live_broadcasts_options_group'); ?>
+                    <table>
+                        <tr valign="top">
+                            <th scope="row"><label for="yt_live_broadcasts_channel_id">Channel ID</label></th>
+                            <td><input type="text" id="yt_live_broadcasts_channel_id" name="yt_live_broadcasts_channel_id" value="<?php echo esc_attr(get_option('yt_live_broadcasts_channel_id')); ?>" /></td>
+                        </tr>
+                        <tr valign="top">
+                            <th scope="row"><label for="yt_live_broadcasts_title_filter">Title Filter</label></th>
+                            <td><input type="text" id="yt_live_broadcasts_title_filter" name="yt_live_broadcasts_title_filter" value="<?php echo esc_attr(get_option('yt_live_broadcasts_title_filter')); ?>" /></td>
+                        </tr>
+                    </table>
+                    <?php submit_button(); ?>
+                </form>
+            </div>
+            <div>
+                <h2>Live Broadcasts</h2>
+                <?php echo display_youtube_live_broadcasts(); ?>
+            </div>
+            <div>
+                <h2>How to Use This Plugin</h2>
+                <p>To use the YouTube Live Broadcasts plugin, follow these steps:</p>
+                <ol>
+                    <li>Go to the plugin settings page by navigating to <strong>Settings > YouTube Live Broadcasts</strong>.</li>
+                    <li>Enter your YouTube Channel ID in the provided field and save the settings.</li>
+                    <li>Use the shortcode <code>[youtube_live]</code> to display the live broadcasts on any page or post.</li>
+                    <li>You can also add the YouTube Live Broadcasts widget to your sidebar or any widget area.</li>
+                </ol>
+                <h2>How to Use Title Filtering</h2>
+                <p>To filter the live broadcasts based on the title, follow these steps:</p>
+                <ol>
+                    <li>Go to the plugin settings page by navigating to <strong>Settings > YouTube Live Broadcasts</strong>.</li>
+                    <li>Enter a keyword or phrase in the <strong>Title Filter</strong> field that should be present in the broadcast title.</li>
+                    <li>Save the settings. The plugin will now only display broadcasts that contain the specified keyword or phrase in the title.</li>
+                </ol>
+            </div>
         </div>
-        <div>
-            <h2>Live Broadcasts</h2>
-            <?php echo display_youtube_live_broadcasts(); ?>
-        </div>
-    </div>
-<?php
+    <?php
 }
+    
 
 function yt_live_broadcasts_widget() {
     register_widget('YT_Live_Broadcasts_Widget');
